@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的第一个网页</title>
+</head>
+<body>
+  <h1>你好，这是我写的第一个网页</h1>
+  <p>你点了我 <span id="n">0</span> 次</p>
+  <button onclick="clicked()">点我</button>
+
+  <script>
+    let count = 0;
+
+    function clicked() {
+      count = count + 1;
+      document.getElementById('n').textContent = count;
+    }
+  </script>
+</body>
+</html>
